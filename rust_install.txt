@@ -1,0 +1,19 @@
+source: https://www.rust-lang.org/learn/get-started
+
+## Install
+curl --proto '=https' —tlsv1.2 -sSf https://sh.rustup.rs | sh
+## Uninstall
+rustup self uninstall 
+source $HOME/.cargo/env
+
+You can install a code formatting tool (Rustfmt) with 
+$ rustup component add rustfmt 
+and a linting tool (Clippy) with
+$ rustup component add clippy
+
+
+## Update for emsdk / webassembly
+
+rustup install stable
+rustup default stable
+rustup target add wasm32-unknown-emscripten
